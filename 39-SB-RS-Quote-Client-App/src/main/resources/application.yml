@@ -1,0 +1,6 @@
+server:
+  port: 7090
+  
+app:
+  messages:
+     QuoteApiUrl : https://quoters.apps.pcfone.io/api/random  
