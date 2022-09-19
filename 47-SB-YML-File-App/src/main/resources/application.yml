@@ -1,0 +1,9 @@
+server:
+  port: 7090
+  
+app:
+  messages:
+    greetMsg: Good Morning!!!
+    wishMsg : Wlcome To Ashok IT
+     
+     
