@@ -1,0 +1,22 @@
+server:
+  port: 7090
+  
+  #run the application  after server starts
+  # http://localhost:7090/actuator
+  # http://localhost:7090/actuator/health o/p ({"status":"UP"})
+  #checking the health of our application means monitoring our application of end point
+  
+  
+  #(console o/p :  Exposing 13 endpoint(s) beneath base path '/actuator') *means all
+management:
+   endpoints:
+     web:
+       exposure:
+         include : '*' #(everything will be included)
+         #include : threaddump , heapdump(include 2)
+         exclude : beans,mappings #(exclude 2)
+   endpoint:
+     shutdown :
+       enabled : true
+       
+       
